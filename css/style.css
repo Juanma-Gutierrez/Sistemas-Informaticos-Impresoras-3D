@@ -4,24 +4,92 @@
 /* Versión: 1.0 16/11/22                                       */
 /***************************************************************/
 
+/*
+***** Assets *****
+Colores:
+    Azul:    006DCC
+    Naranja: ED771D
+    Púrpura: 712F79
+    Negro:   080708
+    Blanco:  FCEADE
+
+Fuentes:
+Principal (Hero Section): Salsa // 
+            Petit Formal Script // Sarina // Lily Script one
+Secundaria: Noto Serif
+Terciaria:  Overpass
+*/
+
+:root {
+    --blanco: #fceade;
+    --negro: #080708;
+    --azul: #006dcc;
+    --naranja: #ed771d;
+    --purpura: #712f79;
+}
+
+@font-face {
+    font-family: SalsaRegular;
+    src: url("../fonts/Salsa/Salsa-Regular.ttf");
+}
+@font-face {
+    font-family: NotoSerif;
+    src: url("../fonts/Noto_Serif/NotoSerif-Regular.ttf");
+}
+@font-face {
+    font-family: Overpass;
+    src: url("../fonts/Overpass/Overpass-VariableFont_wght.ttf");
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    border: 1px solid red;
+    /*    border: 1px solid red;*/
+    scroll-behavior: smooth;
+    transition: 0.4s;
+}
+
+body {
+    font-family: Overpass;
 }
 
 #fixed {
     position: sticky;
     top: 0;
-    background-color: blueviolet;
-    width: 100vw;
 }
 #header {
+    font-family: NotoSerif;
     padding: 10px;
+    background-color: var(--purpura);
+    color: var(--blanco);
+    text-align: center;
 }
 #navbar {
-    padding: 10px;
+    background-color: var(--naranja);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    box-shadow: 0px 05px 5px #08070833;
+}
+#navbar button {
+    font-family: NotoSerif;
+    font-weight: bold;
+    color: var(--blanco);
+    background-color: var(--naranja);
+    text-decoration: none;
+    padding: 15px;
+    border: 0;
+    box-shadow: inset 0 0 0 0 #f9f9f9;
+    cursor: pointer;
+}
+
+#navbar button:hover {
+    color: var(--purpura);
+    box-shadow: inset 0 -50px var(--blanco);
+    border-radius: 15px 15px 0px 0px;
 }
 
 #wrapper {
@@ -30,7 +98,37 @@
 }
 
 #hero-section {
+    align-items: center;
+    animation: hero-section-carousel 20s infinite;
+    background-blend-mode: color;
+    background-image: url("../images/girl-with-red-hat-Jcuz3_e1moQ-unsplash.jpg");
+    background-position: center;
+    background-size: cover;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    font-family: SalsaRegular;
+    font-size: 6rem;
     height: 70vh;
+    justify-content: center;
+    margin-top: 0px;
+    text-shadow: 0px 0px 15px #000a;
+}
+#hero-section button {
+    font-family: NotoSerif;
+    font-weight: bold;
+    color: var(--blanco);
+    background-color: var(--azul);
+    text-decoration: none;
+    padding: 15px;
+    border: 0;
+    box-shadow: inset 0 0 0 0 #f9f9f9;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#hero-section button:hover {
+    color: var(--purpura);
+    box-shadow: inset 0 50px var(--blanco);
 }
 
 #what-are {
@@ -148,4 +246,47 @@ footer {
     justify-content: space-around;
     align-items: center;
     height: 100px;
+}
+
+/* ********** KEYFRAMES ANIMATIONS ********** */
+@keyframes hero-section-carousel {
+    0% {
+        background-image: url("../images/girl-with-red-hat-Jcuz3_e1moQ-unsplash.jpg");
+    }
+    23% {
+        background-image: url("../images/girl-with-red-hat-Jcuz3_e1moQ-unsplash.jpg");
+    }
+    25% {
+        background-image: url("../images/stefan-moertl-MZSX2R6KKEw-unsplash.jpg");
+    }
+    48% {
+        background-image: url("../images/stefan-moertl-MZSX2R6KKEw-unsplash.jpg");
+    }
+    50% {
+        background-image: url("../images/kenny-eliason-38XhGPwzI3U-unsplash.jpg");
+    }
+    73% {
+        background-image: url("../images/kenny-eliason-38XhGPwzI3U-unsplash.jpg");
+    }
+    75% {
+        background-image: url("../images/stefan-moertl-mG1mJ7bSWXw-unsplash.jpg");
+    }
+    98% {
+        background-image: url("../images/stefan-moertl-mG1mJ7bSWXw-unsplash.jpg");
+    }
+    100% {
+        background-image: url("../images/girl-with-red-hat-Jcuz3_e1moQ-unsplash.jpg");
+    }
+}
+
+/* ********** MEDIA QUERIES ********** */
+@media screen and (width<900px) {
+    #navbar button {
+        padding: 5px;
+    }
+}
+@media screen and (width<700px) {
+    #header {
+        display: none;
+    }
 }

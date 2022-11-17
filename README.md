@@ -1,8 +1,6 @@
-# Sistemas-Informaticos-Impresoras-3D
-
-Trabajo Primer Trimestre de Sistemas Informáticos - Impresoras 3D
-
 # Desarrollo de Aplicaciones Multiplataforma Curso 22-23
+
+# Impresoras 3D
 
 ## Trabajo de periféricos.
 
