@@ -1,0 +1,151 @@
+/***************************************************************/
+/* Trabajo 1ª ev. Lenguaje de Marcas & Sistemas Informáticos   */
+/* Autor: Juan Manuel Gutiérrez                                */
+/* Versión: 1.0 16/11/22                                       */
+/***************************************************************/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 1px solid red;
+}
+
+#fixed {
+    position: sticky;
+    top: 0;
+    background-color: blueviolet;
+    width: 100vw;
+}
+#header {
+    padding: 10px;
+}
+#navbar {
+    padding: 10px;
+}
+
+#wrapper {
+    width: 80%;
+    margin: auto;
+}
+
+#hero-section {
+    height: 70vh;
+}
+
+#what-are {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+#what-are section {
+    height: 200px;
+    width: 50%;
+}
+
+#kind-of {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+#kind-of section {
+    height: 200px;
+    width: 33.3%;
+}
+
+#working {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+#working section {
+    height: 200px;
+    width: 50%;
+}
+
+#installation {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+#installation section {
+    height: 300px;
+    width: 33.33%;
+}
+
+#drivers {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+#drivers section {
+    height: 300px;
+    width: 50%;
+}
+
+#marks {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+#marks section {
+    height: 100px;
+    width: 16.66%;
+}
+
+#where {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+#where section {
+    height: 200px;
+    width: 33.33%;
+}
+
+#opinion {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+#opinion section {
+    height: 400px;
+    width: 50%;
+}
+
+#bibliography {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+#bibliography section {
+    height: 400px;
+    width: 50%;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    height: 100px;
+}
