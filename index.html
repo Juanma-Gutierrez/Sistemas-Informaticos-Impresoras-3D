@@ -117,14 +117,19 @@
                     </p>
                 </div>
             </div>
+            <!-- ********** FDM CARD ********** -->
             <div id="kind-of-title" class="subtitle">
                 Clases de impresoras 3D
             </div>
             <div id="kind-of">
-                <!-- ********** FDM CARD ********** -->
                 <section class="kind-of-card">
                     <div class="foto-container foto-container-kind">
-                        <img class="foto" src="./images/FDM.webp" alt="" onclick="window.modalFDM.showModal();"/>
+                        <img
+                            class="foto"
+                            src="./images/FDM.webp"
+                            alt=""
+                            onclick="window.modalFDM.showModal();"
+                        />
                     </div>
                     <div class="centered">
                         <h4>Impresión 3D por deposición fundida: FDM</h4>
@@ -206,7 +211,12 @@
                 <!-- ********** SLA CARD ********** -->
                 <section class="kind-of-card">
                     <div class="foto-container foto-container-kind">
-                        <img class="foto" src="./images/SLA2.webp" alt="" onclick="window.modalSLA.showModal();"/>
+                        <img
+                            class="foto"
+                            src="./images/SLA2.webp"
+                            alt=""
+                            onclick="window.modalSLA.showModal();"
+                        />
                     </div>
                     <div class="centered">
                         <h4>Impresión 3D por estereolitografía: SLA</h4>
@@ -359,6 +369,85 @@
                     </dialog>
                 </section>
 
+                <!-- ********** MSLA  ********** -->
+                <section class="kind-of-card">
+                    <div class="foto-container foto-container-kind">
+                        <img class="foto" src="./images/Msla-1.jpg" alt="" />
+                    </div>
+                    <div class="centered">
+                        <h4>Masked Stereolithography Apparatus (MSLA)</h4>
+                        <p>
+                            Similar a la impresión 3D SLA, pero utilizando una
+                            fuente de luz diferente.
+                        </p>
+                        <button
+                            onclick="window.modalMSLA.showModal();"
+                            class="kind-of-button"
+                        >
+                            Más información
+                        </button>
+                    </div>
+                    <dialog id="modalMSLA" class="kind-of-modal">
+                        <button
+                            onclick="window.modalMSLA.close();"
+                            class="close-button"
+                        >
+                            <i class="fa fa-times" aria-hidden="true"></i>
+                        </button>
+                        <div class="centered">
+                            <h2>Masked Stereolithography Apparatus (MSLA)</h2>
+                        </div>
+                        <p>
+                            Método similar de impresión que las impresoras 3D
+                            SLA, solo que en lugar de curar la resina gracias a
+                            una fuente de luz, en este caso utilizan un método
+                            diferente. En lugar de utilizar un rayo láser para
+                            trazar las capas, esta tecnología usa una fuente de
+                            luz ultravioleta más grande y luego la enmascaran
+                            con una pantalla LCD.
+                        </p>
+                        <p>
+                            La velocidad de impresión y los tiempos de
+                            producción serán diferentes que con una impresora
+                            SLA, ya que el tiempo de exposición a luz
+                            ultravioleta es diferente al láser.
+                        </p>
+                        <p>
+                            La tecnología MSLA depende del número de capas que
+                            se imprimen, lo que significa una ventaja de
+                            velocidad en cada capa especialmente cuando se
+                            imprimen varios objetos a la vez.
+                        </p>
+                        <div class="centered">
+                            <img src="./images/MSLA-grafico.jpg" alt="" />
+                        </div>
+                        <p>
+                            Es importante prestar atención a la orientación de
+                            las piezas, ya que el tiempo de impresión también
+                            viene determinado por la altura de la pieza.
+                        </p>
+                        <p>
+                            Una vez finalizada la pieza, como en otras
+                            tecnologías, debe pasar por la fase de limpieza,
+                            curado y acabado superficial.
+                        </p>
+                        <div class="centered">
+                            <iframe
+                                width="560"
+                                height="315"
+                                src="https://www.youtube.com/embed/lE8TxgpXx9M"
+                                title="YouTube video player"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen
+                            ></iframe>
+                            <button onclick="window.modalMSLA.close();">
+                                Cerrar
+                            </button>
+                        </div>
+                    </dialog>
+                </section>
+
                 <!-- ********** plantilla de cards  ********** -->
                 <section class="kind-of-card">
                     <div class="foto-container foto-container-kind">
@@ -394,7 +483,6 @@
                 </section>
                 <!-- **********  ********** -->
 
-                <section>MSLA</section>
                 <section>SLS</section>
                 <section>SLM</section>
                 <section>DMLS</section>

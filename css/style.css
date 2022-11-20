@@ -65,6 +65,11 @@ body {
     justify-content: center;
     align-items: center;
 }
+
+iframe {
+    margin: 20px;
+}
+
 /* ********** HEADER SECTION ********** */
 #header {
     font-family: NotoSerif;
@@ -231,6 +236,10 @@ p {
     overflow: hidden;
     margin: 0px;
     padding-bottom: 10px;
+}
+.kind-of-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 10px 35px var(--gris);
 }
 #kind-of h4 {
     font-family: NotoSerif;
