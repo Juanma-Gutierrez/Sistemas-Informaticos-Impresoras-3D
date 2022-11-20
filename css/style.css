@@ -47,6 +47,7 @@ Terciaria:  Overpass
     box-sizing: border-box;
     scroll-behavior: smooth;
     transition: 0.4s;
+    border: 1px solid red;
 }
 
 body {
@@ -187,16 +188,21 @@ p {
     width: 45%;
 }
 
-#kind-of {
+/* #kind-of {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
+} */
+#kind-of {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
 }
-#kind-of section {
+#kind-of div {
     height: 200px;
-    width: 33.3%;
+    width: 100%;
 }
 
 #working {
@@ -346,6 +352,9 @@ footer {
     #wrapper {
         width: 90%;
     }
+    #kind-of {
+        grid-template-columns: 1fr;
+    }
 }
 @media screen and (width<600px) {
     #header {
@@ -362,4 +371,5 @@ footer {
     #what-are div {
         width: 100%;
     }
+
 }
