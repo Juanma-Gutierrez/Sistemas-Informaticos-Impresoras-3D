@@ -32,10 +32,12 @@ Terciaria:  Overpass
     font-family: SalsaRegular;
     src: url("../fonts/Salsa/Salsa-Regular.ttf");
 }
+
 @font-face {
     font-family: NotoSerif;
     src: url("../fonts/Noto_Serif/NotoSerif-Regular.ttf");
 }
+
 @font-face {
     font-family: Overpass;
     src: url("../fonts/Overpass/Overpass-VariableFont_wght.ttf");
@@ -61,6 +63,7 @@ body {
     color: var(--blanco);
     text-align: center;
 }
+
 #navbar {
     align-items: center;
     background-color: var(--naranja);
@@ -69,6 +72,7 @@ body {
     flex-wrap: wrap;
     justify-content: center;
 }
+
 #navbar button {
     font-family: NotoSerif;
     font-weight: bold;
@@ -80,6 +84,7 @@ body {
     box-shadow: inset 0 0 0 0 var(--blanco);
     cursor: pointer;
 }
+
 #navbar button:hover {
     color: var(--purpura);
     box-shadow: inset 0 -50px var(--blanco);
@@ -96,7 +101,7 @@ body {
     align-items: center;
     animation: hero-section-carousel 20s infinite;
     background-blend-mode: color;
-    background-image: url("../images/girl-with-red-hat-Jcuz3_e1moQ-unsplash.jpg");
+    background-image: url("../images/stefan-moertl-MZSX2R6KKEw-unsplash.jpg");
     background-position: center;
     background-size: cover;
     color: var(--blanco);
@@ -109,6 +114,7 @@ body {
     margin-top: 0px;
     text-shadow: 0px 0px 15px #000a;
 }
+
 #hero-section button {
     font-family: NotoSerif;
     color: var(--blanco);
@@ -120,17 +126,19 @@ body {
     border-radius: 5px;
     cursor: pointer;
 }
+
 #hero-section button:hover {
     color: var(--purpura);
     box-shadow: inset 0 50px var(--blanco);
 }
+
 #filtro {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 70vh;
-    background-color: var(--naranja);
+    background-color: var(--purpura);
     opacity: 50%;
 }
 
@@ -164,6 +172,7 @@ p {
     box-shadow: 0px 0px 15px #0009;
     margin: 20px;
 }
+
 .foto {
     position: absolute;
     width: 100%;
@@ -172,6 +181,7 @@ p {
     object-fit: cover;
     filter: grayscale(70%);
 }
+
 .foto:hover {
     filter: grayscale(0%);
     transform: scale(1.1) translateY(-3%);
@@ -182,8 +192,9 @@ p {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
-    align-items: flex-start;
+    align-items: center;
 }
+
 #what-are div {
     width: 45%;
 }
@@ -212,6 +223,7 @@ p {
     justify-content: space-around;
     align-items: center;
 }
+
 #working section {
     height: 200px;
     width: 50%;
@@ -224,6 +236,7 @@ p {
     justify-content: space-around;
     align-items: center;
 }
+
 #installation section {
     height: 300px;
     width: 33.33%;
@@ -236,6 +249,7 @@ p {
     justify-content: space-around;
     align-items: center;
 }
+
 #drivers section {
     height: 300px;
     width: 50%;
@@ -248,6 +262,7 @@ p {
     justify-content: space-around;
     align-items: center;
 }
+
 #marks section {
     height: 100px;
     width: 16.66%;
@@ -260,6 +275,7 @@ p {
     justify-content: space-around;
     align-items: center;
 }
+
 #where section {
     height: 200px;
     width: 33.33%;
@@ -272,6 +288,7 @@ p {
     justify-content: space-around;
     align-items: center;
 }
+
 #opinion section {
     height: 400px;
     width: 50%;
@@ -284,6 +301,7 @@ p {
     justify-content: space-around;
     align-items: center;
 }
+
 #bibliography section {
     height: 400px;
     width: 50%;
@@ -297,6 +315,7 @@ p {
     height: 50px;
     width: 50px;
 }
+
 #fixed i {
     color: var(--purpura);
 }
@@ -313,31 +332,39 @@ footer {
 /* ********** KEYFRAMES ANIMATIONS ********** */
 @keyframes hero-section-carousel {
     0% {
-        background-image: url("../images/girl-with-red-hat-Jcuz3_e1moQ-unsplash.jpg");
+        background-image: url("../images/stefan-moertl-MZSX2R6KKEw-unsplash.jpg");
     }
+
     23% {
-        background-image: url("../images/girl-with-red-hat-Jcuz3_e1moQ-unsplash.jpg");
+        background-image: url("../images/stefan-moertl-MZSX2R6KKEw-unsplash.jpg");
     }
+
     25% {
-        background-image: url("../images/stefan-moertl-MZSX2R6KKEw-unsplash.jpg");
+        background-image: url("../images/osman-talha-dikyar-1MZ9JjAXg1E-unsplash.jpg");
     }
+
     48% {
-        background-image: url("../images/stefan-moertl-MZSX2R6KKEw-unsplash.jpg");
+        background-image: url("../images/osman-talha-dikyar-1MZ9JjAXg1E-unsplash.jpg");
     }
+
     50% {
-        background-image: url("../images/kenny-eliason-38XhGPwzI3U-unsplash.jpg");
+        background-image: url("../images/stefan-moertl-mG1mJ7bSWXw-unsplash.jpg");
     }
+
     73% {
-        background-image: url("../images/kenny-eliason-38XhGPwzI3U-unsplash.jpg");
+        background-image: url("../images/stefan-moertl-mG1mJ7bSWXw-unsplash.jpg");
     }
+
     75% {
-        background-image: url("../images/stefan-moertl-mG1mJ7bSWXw-unsplash.jpg");
+        background-image: url("../images/osman-talha-dikyar-PomM7aa5m18-unsplash.jpg");
     }
+
     98% {
-        background-image: url("../images/stefan-moertl-mG1mJ7bSWXw-unsplash.jpg");
+        background-image: url("../images/osman-talha-dikyar-PomM7aa5m18-unsplash.jpg");
     }
+
     100% {
-        background-image: url("../images/girl-with-red-hat-Jcuz3_e1moQ-unsplash.jpg");
+        background-image: url("../images/stefan-moertl-MZSX2R6KKEw-unsplash.jpg");
     }
 }
 
@@ -346,9 +373,11 @@ footer {
     #navbar button {
         padding: 5px;
     }
+
     #hero-section {
         font-size: 3rem;
     }
+
     #wrapper {
         width: 90%;
     }
@@ -356,10 +385,12 @@ footer {
         grid-template-columns: 1fr;
     }
 }
+
 @media screen and (width<600px) {
     #header {
         display: none;
     }
+
     #hero-section {
         font-size: 2rem;
     }
@@ -371,5 +402,4 @@ footer {
     #what-are div {
         width: 100%;
     }
-
 }
