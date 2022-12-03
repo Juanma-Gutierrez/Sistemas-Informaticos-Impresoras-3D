@@ -117,6 +117,7 @@
                     </p>
                 </div>
             </div>
+
             <!-- ********** FDM CARD ********** -->
             <div id="kind-of-title" class="subtitle">
                 Clases de impresoras 3D
@@ -475,7 +476,7 @@
                             <i class="fa fa-times" aria-hidden="true"></i>
                         </button>
                         <div class="centered">
-                            <h2>Impresoras 3D SLS</h2>
+                            <h2>Impresión 3D SLS</h2>
                         </div>
                         <p>
                             El procedimiento de funcionamiento es el de fusionar
@@ -526,11 +527,11 @@
                             óptimas y evitar que se deformen las piezas.
                         </p>
                         <p>
-                            <b>Postacabado:</b> Hay que retirar las piezas terminadas de
-                            la cámara de impresión, separarlas y limpiar el
-                            exceso de polvo. El polvo se puede reciclar y se les
-                            puede dar un posacabado adicional a las piezas
-                            mediante un granallado o pulido.
+                            <b>Postacabado:</b> Hay que retirar las piezas
+                            terminadas de la cámara de impresión, separarlas y
+                            limpiar el exceso de polvo. El polvo se puede
+                            reciclar y se les puede dar un posacabado adicional
+                            a las piezas mediante un granallado o pulido.
                         </p>
                         <div class="centered">
                             <iframe
@@ -549,42 +550,80 @@
                     </dialog>
                 </section>
 
-
-
                 <!-- ********** plantilla de cards  ********** -->
                 <section class="kind-of-card">
                     <div class="foto-container foto-container-kind">
-                        <img class="foto" src="./images/" alt="" />
+                        <img class="foto" src="./images/SLM.jpg" alt="" />
                     </div>
                     <div class="centered">
-                        <h4>titulo</h4>
-                        <p></p>
+                        <h4>Selective Laser Melting (SLM)</h4>
+                        <p>
+                            Es una tecnología utilizada para imprimir piezas
+                            metálicas que se basa en la impresión de cama de
+                            polvo.
+                        </p>
                         <button
-                            onclick="window.modalX.showModal();"
+                            onclick="window.modalSLM.showModal();"
                             class="kind-of-button"
                         >
                             Más información
                         </button>
                     </div>
-                    <dialog id="modalX" class="kind-of-modal">
+                    <dialog id="modalSLM" class="kind-of-modal">
                         <button
-                            onclick="window.modalX.close();"
+                            onclick="window.modalSLM.close();"
                             class="close-button"
                         >
                             <i class="fa fa-times" aria-hidden="true"></i>
                         </button>
                         <div class="centered">
-                            <h2>TITULO CARD</h2>
+                            <h2>Impresión 3D SLM</h2>
                         </div>
-                        <p></p>
+                        <p>
+                            La impresora SLM deposita una fina capa de polvo
+                            metálico sobre una base metálica que será fundida de
+                            forma selectiva por el láser según el código de
+                            impresión generado previamente por el software.
+                        </p>
+                        <p>
+                            Posteriormente, el proceso se repite fundiendo capas
+                            una sobre otra para construir la pieza y su soporte.
+                            Finalmente, la pieza queda rodeada de todo el polvo
+                            metálico sin procesar que deberá ser cribado para su
+                            reutilización en la siguiente impresión.
+                        </p>
                         <div class="centered">
-                            <button onclick="window.modalX.close();">
+                            <img src="./images/SLM1.jpg" alt="" />
+                        </div>
+                        <p>
+                            Esta tecnología de impresión permite crear objetos
+                            de paredes delgadas y geométricas para obtener
+                            diseños ligeros. Las piezas tienen excelentes
+                            propiedades mecánicas, para crear cargas de
+                            manipulación de piezas y tensiones.
+                        </p>
+
+                        <p>
+                            Esta tecnología está indicada incluso para la
+                            producción de pequeños lotes.
+                        </p>
+
+                        <div class="centered">
+                            <iframe
+                                width="560"
+                                height="315"
+                                src="https://www.youtube.com/embed/6cBnoFnQ18g"
+                                title="YouTube video player"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen
+                            ></iframe>
+                            <button onclick="window.modalSLM.close();">
                                 Cerrar
                             </button>
                         </div>
                     </dialog>
                 </section>
-
 
                 <!-- ********** plantilla de cards  ********** -->
                 <section class="kind-of-card">
@@ -621,7 +660,6 @@
                 </section>
                 <!-- **********  ********** -->
 
-                <section>SLS</section>
                 <section>SLM</section>
                 <section>DMLS</section>
                 <section>EBM</section>
