@@ -550,7 +550,7 @@
                     </dialog>
                 </section>
 
-                <!-- ********** plantilla de cards  ********** -->
+                <!-- ********** SLM  ********** -->
                 <section class="kind-of-card">
                     <div class="foto-container foto-container-kind">
                         <img class="foto" src="./images/SLM.jpg" alt="" />
@@ -625,6 +625,93 @@
                     </dialog>
                 </section>
 
+                <!-- ********** DMLS  ********** -->
+                <section class="kind-of-card">
+                    <div class="foto-container foto-container-kind">
+                        <img class="foto" src="./images/DMLS.jpg" alt="" />
+                    </div>
+                    <div class="centered">
+                        <h4>Direct Metal Laser Sintering (DMLS)</h4>
+                        <p>
+                            Proceso de producción similar al SLS, aunque con una
+                            diferencia importante en que únicamente sintetiza el
+                            material sin fundirlo por completo.
+                        </p>
+                        <button
+                            onclick="window.modalDMLS.showModal();"
+                            class="kind-of-button"
+                        >
+                            Más información
+                        </button>
+                    </div>
+                    <dialog id="modalDMLS" class="kind-of-modal">
+                        <button
+                            onclick="window.modalDMLS.close();"
+                            class="close-button"
+                        >
+                            <i class="fa fa-times" aria-hidden="true"></i>
+                        </button>
+                        <div class="centered">
+                            <h2>
+                                Direct Metal Laser Sintering – Sinterizado
+                                Directo de Metal por Láser
+                            </h2>
+                        </div>
+                        <p>
+                            Con este sistema, las piezas obtenidas son de metal.
+                            Se generan a través de un modelo 3D. Mientras que
+                            para los modelos de poliamida, se utiliza una
+                            temperatura de sintetizado entre 160ºC y 200ºC, para
+                            fundir el acero es necesaria una temperatura cercana
+                            a los 1510ºC, lo que requiere un laser de mayor
+                            potencia. A diferencia del proceso SLM, el DMLS sólo
+                            sintetiza el material sin fundirlo por completo.
+                        </p>
+                        <p>
+                            En la primera parte del proceso, un rodillo aplica
+                            una capa de polvo de metal. Posteriormente, el láser
+                            sintetiza el polvo siguiendo los datos del modelo
+                            3D. A continuación, la plataforma desciende para
+                            aplicar una nueva capa de polvo. Este proceso se va
+                            repitiendo en bucle hasta que el modelo está
+                            completamente finalizado.
+                        </p>
+                        <p>
+                            Las piezas de metal deben enfriarse antes de
+                            extraerse. En caso de que la pieza hubiera
+                            necesitado de soportes, éstos se eliminarían de
+                            forma manual.
+                        </p>
+                        <div class="centered">
+                            <img src="./images/DMLS1.jpg" alt="" />
+                        </div>
+                        <p>
+                            Una de las ventajas que tiene esta tecnología es que
+                            prescinde de procesos que consumen mucho tiempo.
+                            También permite crear diseños complicados y muy
+                            detallados que no serían posibles con otras
+                            tecnologías debido a las limitaciones de los
+                            procesos de fabricación tradicionales. Las piezas
+                            obtenidas serán muy resistentes al calor y tendrán
+                            una alta precisión en la fabricación.
+                        </p>
+                        <div class="centered">
+                            <iframe
+                                width="560"
+                                height="315"
+                                src="https://www.youtube.com/embed/lZWWkfm9igk"
+                                title="YouTube video player"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen
+                            ></iframe>
+                            <button onclick="window.modalDMLS.close();">
+                                Cerrar
+                            </button>
+                        </div>
+                    </dialog>
+                </section>
+
                 <!-- ********** plantilla de cards  ********** -->
                 <section class="kind-of-card">
                     <div class="foto-container foto-container-kind">
@@ -660,7 +747,6 @@
                 </section>
                 <!-- **********  ********** -->
 
-                <section>SLM</section>
                 <section>DMLS</section>
                 <section>EBM</section>
                 <section>BJ</section>
