@@ -337,10 +337,7 @@ dialog img, dialog iframe{
 .kind-of-modal::-webkit-scrollbar {
     display: none;
 }
-.foto-container-kind img {
-    width: 100%;
-    margin: auto;
-}
+
 /* ********** WORKING SECTION ********** */
 #working {
     display: flex;
