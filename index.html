@@ -14,6 +14,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="css/style.css" />
+        <script src="./js/script.js" type="text/javascript"></script>
         <link
             rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
@@ -126,12 +127,7 @@
                 <section class="kind-of-card">
                     <div>
                         <div class="foto-container foto-container-kind">
-                            <img
-                                class="foto"
-                                src="./images/FDM.webp"
-                                alt=""
-                                onclick="window.modalFDM.showModal();"
-                            />
+                            <img class="foto" src="./images/FDM.webp" alt="" />
                         </div>
                         <div class="centered">
                             <h4>Fused Deposition Modeling: FDM</h4>
@@ -144,18 +140,12 @@
                         </div>
                     </div>
                     <div class="centered">
-                        <button
-                            onclick="window.modalFDM.showModal();"
-                            class="kind-of-button"
-                        >
+                        <button id="modalFDMOpen" class="kind-of-button">
                             Más información
                         </button>
                     </div>
                     <dialog id="modalFDM" class="kind-of-modal">
-                        <button
-                            onclick="window.modalFDM.close();"
-                            class="close-button"
-                        >
+                        <button id="modalFDMClose1" class="close-button">
                             <i class="fa fa-times" aria-hidden="true"></i>
                         </button>
                         <div class="centered">
@@ -207,9 +197,7 @@
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                                 allowfullscreen
                             ></iframe>
-                            <button onclick="window.modalFDM.close();">
-                                Cerrar
-                            </button>
+                            <button id="modalFDMClose2">Cerrar</button>
                         </div>
                     </dialog>
                 </section>
@@ -218,12 +206,7 @@
                 <section class="kind-of-card">
                     <div>
                         <div class="foto-container foto-container-kind">
-                            <img
-                                class="foto"
-                                src="./images/SLA2.webp"
-                                alt=""
-                                onclick="window.modalSLA.showModal();"
-                            />
+                            <img class="foto" src="./images/SLA2.webp" alt="" />
                         </div>
                         <div class="centered">
                             <h4>Stereolithography : SLA</h4>
@@ -236,18 +219,12 @@
                         </div>
                     </div>
                     <div class="centered">
-                        <button
-                            onclick="window.modalSLA.showModal();"
-                            class="kind-of-button"
-                        >
+                        <button id="modalSLAOpen" class="kind-of-button">
                             Más información
                         </button>
                     </div>
                     <dialog id="modalSLA" class="kind-of-modal">
-                        <button
-                            onclick="window.modalSLA.close();"
-                            class="close-button"
-                        >
+                        <button id="modalSLAClose1" class="close-button">
                             <i class="fa fa-times" aria-hidden="true"></i>
                         </button>
                         <div class="centered">
@@ -289,9 +266,7 @@
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                                 allowfullscreen
                             ></iframe>
-                            <button onclick="window.modalSLA.close();">
-                                Cerrar
-                            </button>
+                            <button id="modalSLAClose2">Cerrar</button>
                         </div>
                     </dialog>
                 </section>
@@ -300,12 +275,7 @@
                 <section class="kind-of-card">
                     <div>
                         <div class="foto-container foto-container-kind">
-                            <img
-                                class="foto"
-                                src="./images/DLP.webp"
-                                alt=""
-                                onclick="window.modalDLP.showModal();"
-                            />
+                            <img class="foto" src="./images/DLP.webp" alt="" />
                         </div>
                         <div class="centered">
                             <h4>Digital Light Processing: DLP</h4>
@@ -319,18 +289,12 @@
                         </div>
                     </div>
                     <div class="centered">
-                        <button
-                            onclick="window.modalDLP.showModal();"
-                            class="kind-of-button"
-                        >
+                        <button id="modalDLPOpen" class="kind-of-button">
                             Más información
                         </button>
                     </div>
                     <dialog id="modalDLP" class="kind-of-modal">
-                        <button
-                            onclick="window.modalDLP.close();"
-                            class="close-button"
-                        >
+                        <button id="modalDLPClose1" class="close-button">
                             <i class="fa fa-times" aria-hidden="true"></i>
                         </button>
                         <div class="centered">
@@ -380,9 +344,7 @@
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                                 allowfullscreen
                             ></iframe>
-                            <button onclick="window.modalDLP.close();">
-                                Cerrar
-                            </button>
+                            <button id="modalDLPClose2">Cerrar</button>
                         </div>
                     </dialog>
                 </section>
@@ -406,18 +368,12 @@
                         </div>
                     </div>
                     <div class="centered">
-                        <button
-                            onclick="window.modalMSLA.showModal();"
-                            class="kind-of-button"
-                        >
+                        <button id="modalMSLAOpen" class="kind-of-button">
                             Más información
                         </button>
                     </div>
                     <dialog id="modalMSLA" class="kind-of-modal">
-                        <button
-                            onclick="window.modalMSLA.close();"
-                            class="close-button"
-                        >
+                        <button id="modalMSLAClose1" class="close-button">
                             <i class="fa fa-times" aria-hidden="true"></i>
                         </button>
                         <div class="centered">
@@ -470,9 +426,7 @@
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                                 allowfullscreen
                             ></iframe>
-                            <button onclick="window.modalMSLA.close();">
-                                Cerrar
-                            </button>
+                            <button id="modalMSLAClose2">Cerrar</button>
                         </div>
                     </dialog>
                 </section>
@@ -493,18 +447,12 @@
                         </div>
                     </div>
                     <div class="centered">
-                        <button
-                            onclick="window.modalSLS.showModal();"
-                            class="kind-of-button"
-                        >
+                        <button id="modalSLSOpen" class="kind-of-button">
                             Más información
                         </button>
                     </div>
                     <dialog id="modalSLS" class="kind-of-modal">
-                        <button
-                            onclick="window.modalSLS.close();"
-                            class="close-button"
-                        >
+                        <button id="modalSLSClose1" class="close-button">
                             <i class="fa fa-times" aria-hidden="true"></i>
                         </button>
                         <div class="centered">
@@ -577,9 +525,7 @@
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                                 allowfullscreen
                             ></iframe>
-                            <button onclick="window.modalSLS.close();">
-                                Cerrar
-                            </button>
+                            <button id="modalSLSClose2">Cerrar</button>
                         </div>
                     </dialog>
                 </section>
@@ -600,18 +546,12 @@
                         </div>
                     </div>
                     <div class="centered">
-                        <button
-                            onclick="window.modalSLM.showModal();"
-                            class="kind-of-button"
-                        >
+                        <button id="modalSLMOpen" class="kind-of-button">
                             Más información
                         </button>
                     </div>
                     <dialog id="modalSLM" class="kind-of-modal">
-                        <button
-                            onclick="window.modalSLM.close();"
-                            class="close-button"
-                        >
+                        <button id="modalSLMClose1" class="close-button">
                             <i class="fa fa-times" aria-hidden="true"></i>
                         </button>
                         <div class="centered">
@@ -655,9 +595,7 @@
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                                 allowfullscreen
                             ></iframe>
-                            <button onclick="window.modalSLM.close();">
-                                Cerrar
-                            </button>
+                            <button id="modalSLMClose2">Cerrar</button>
                         </div>
                     </dialog>
                 </section>
@@ -678,18 +616,12 @@
                         </div>
                     </div>
                     <div class="centered">
-                        <button
-                            onclick="window.modalDMLS.showModal();"
-                            class="kind-of-button"
-                        >
+                        <button id="modalDMLSOpen" class="kind-of-button">
                             Más información
                         </button>
                     </div>
                     <dialog id="modalDMLS" class="kind-of-modal">
-                        <button
-                            onclick="window.modalDMLS.close();"
-                            class="close-button"
-                        >
+                        <button id="modalDMLSClose1" class="close-button">
                             <i class="fa fa-times" aria-hidden="true"></i>
                         </button>
                         <div class="centered">
@@ -747,9 +679,7 @@
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                                 allowfullscreen
                             ></iframe>
-                            <button onclick="window.modalDMLS.close();">
-                                Cerrar
-                            </button>
+                            <button id="modalDMLSClose2">Cerrar</button>
                         </div>
                     </dialog>
                 </section>
@@ -770,18 +700,12 @@
                         </div>
                     </div>
                     <div class="centered">
-                        <button
-                            onclick="window.modalEBM.showModal();"
-                            class="kind-of-button"
-                        >
+                        <button id="modalEBMOpen" class="kind-of-button">
                             Más información
                         </button>
                     </div>
                     <dialog id="modalEBM" class="kind-of-modal">
-                        <button
-                            onclick="window.modalEBM.close();"
-                            class="close-button"
-                        >
+                        <button id="modalEBMClose1" class="close-button">
                             <i class="fa fa-times" aria-hidden="true"></i>
                         </button>
                         <div class="centered">
@@ -832,9 +756,22 @@
                             operar correctamente el haz de electrones. Esto
                             evita que el polvo se oxide al calentarse.
                         </p>
-                        <p>Al finalizar el proceso, una gran parte del polvo no fundido es reutilizable.</p>
-                        <p>Como esta tecnología se basa en un principio de cargas eléctricas, los materiales utilizados <strong>deben ser conductores</strong>, por lo que hoy en día sólamente se puede utilizar con polvo de metal, como aleaciones de titanio y cromo cobalto.</p>
-                        <p>Este tipo de producción se utiliza principalmente en sectores aeronáuticos y médico, particularmente para el diseño de implantes de titanio.</p>
+                        <p>
+                            Al finalizar el proceso, una gran parte del polvo no
+                            fundido es reutilizable.
+                        </p>
+                        <p>
+                            Como esta tecnología se basa en un principio de
+                            cargas eléctricas, los materiales utilizados
+                            <strong>deben ser conductores</strong>, por lo que
+                            hoy en día sólamente se puede utilizar con polvo de
+                            metal, como aleaciones de titanio y cromo cobalto.
+                        </p>
+                        <p>
+                            Este tipo de producción se utiliza principalmente en
+                            sectores aeronáuticos y médico, particularmente para
+                            el diseño de implantes de titanio.
+                        </p>
                         <div class="centered">
                             <iframe
                                 width="560"
@@ -845,9 +782,7 @@
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                                 allowfullscreen
                             ></iframe>
-                            <button onclick="window.modalEBM.close();">
-                                Cerrar
-                            </button>
+                            <button id="modalEBMClose2">Cerrar</button>
                         </div>
                     </dialog>
                 </section>
@@ -856,36 +791,74 @@
                 <section class="kind-of-card">
                     <div>
                         <div class="foto-container foto-container-kind">
-                            <img class="foto" src="./images/" alt="" />
+                            <img class="foto" src="./images/BJ1.jpg" alt="" />
                         </div>
                         <div class="centered">
-                            <h4>BJ</h4>
-                            <p></p>
+                            <h4>Binder Jetting: BJ</h4>
+                            <p>
+                                Es un método mediante el cual se pueden tener
+                                varios colores dentro de una misma pieza.
+                            </p>
                         </div>
                     </div>
                     <div class="centered">
-                        <button
-                            onclick="window.modalBJ.showModal();"
-                            class="kind-of-button"
-                        >
+                        <button id="modalBJOpen" class="kind-of-button">
                             Más información
                         </button>
                     </div>
                     <dialog id="modalBJ" class="kind-of-modal">
-                        <button
-                            onclick="window.modalBJ.close();"
-                            class="close-button"
-                        >
+                        <button id="modalBJClose1" class="close-button">
                             <i class="fa fa-times" aria-hidden="true"></i>
                         </button>
                         <div class="centered">
-                            <h2>TITULO CARD</h2>
+                            <h2>Binder Jetting: BJ</h2>
+                            <h3>Impresión 3D por inyección de aglutinante</h3>
                         </div>
-                        <p></p>
+                        <p>
+                            Las impresoras 3D de Binder Jetting utilizan un
+                            proceso de impresión en capas para crear piezas
+                            tridimensionales. En este proceso, un material en
+                            polvo se aplica a una superficie y luego se une
+                            mediante la deposición de un líquido o ligante. Este
+                            ligante se aplica a través de una boquilla de
+                            inyección y se desplaza en capas para formar la
+                            pieza deseada.
+                        </p>
+                        <p>
+                            Durante el proceso de impresión 3D por chorro de
+                            aglutinante, el cabezal de impresión 3D se mueve
+                            sobre la plataforma de construcción depositando
+                            gotas de aglutinante, imprimiendo cada capa de forma
+                            similar a las impresoras 2D que imprimen tinta sobre
+                            papel. Cuando se completa una capa, el lecho de
+                            polvo se desplaza hacia abajo y se extiende una
+                            nueva capa de polvo sobre el área de construcción.
+                            El proceso se repite capa por capa hasta que se
+                            completan todas las piezas.
+                        </p>
                         <div class="centered">
-                            <button onclick="window.modalBJ.close();">
-                                Cerrar
-                            </button>
+                            <img src="./images/BJ2.png" alt="">
+                        </div>
+                        <p>
+                            Este tipo de impresiones se suelen ver habitualmente
+                            en el área médica, en la industria automotriz y en
+                            la aeroespacial. Las piezas obtenidas tienen muy
+                            buenas propiedades de resistencia y conductividad.
+                            Es perfecto para la creación de prototipos, joyas y
+                            objetos decorativos.
+                        </p>
+
+                        <div class="centered">
+                            <iframe
+                                width="560"
+                                height="315"
+                                src="https://www.youtube.com/embed/97doBH9jSXY"
+                                title="YouTube video player"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen
+                            ></iframe>
+                            <button id="modalBJClose2">Cerrar</button>
                         </div>
                     </dialog>
                 </section>
@@ -902,18 +875,12 @@
                         </div>
                     </div>
                     <div class="centered">
-                        <button
-                            onclick="window.modalDOD.showModal();"
-                            class="kind-of-button"
-                        >
+                        <button id="modalXOpen" class="kind-of-button">
                             Más información
                         </button>
                     </div>
                     <dialog id="modalDOD" class="kind-of-modal">
-                        <button
-                            onclick="window.modalDOD.close();"
-                            class="close-button"
-                        >
+                        <button id="modalXClose1" class="close-button">
                             <i class="fa fa-times" aria-hidden="true"></i>
                         </button>
                         <div class="centered">
@@ -921,9 +888,7 @@
                         </div>
                         <p></p>
                         <div class="centered">
-                            <button onclick="window.modalDOD.close();">
-                                Cerrar
-                            </button>
+                            <button id="modalXClose2">Cerrar</button>
                         </div>
                     </dialog>
                 </section>
@@ -940,18 +905,12 @@
                         </div>
                     </div>
                     <div class="centered">
-                        <button
-                            onclick="window.modalMJ.showModal();"
-                            class="kind-of-button"
-                        >
+                        <button id="modalXOpen" class="kind-of-button">
                             Más información
                         </button>
                     </div>
                     <dialog id="modalMJ" class="kind-of-modal">
-                        <button
-                            onclick="window.modalMJ.close();"
-                            class="close-button"
-                        >
+                        <button id="modalXClose1" class="close-button">
                             <i class="fa fa-times" aria-hidden="true"></i>
                         </button>
                         <div class="centered">
@@ -959,9 +918,7 @@
                         </div>
                         <p></p>
                         <div class="centered">
-                            <button onclick="window.modalX.close();">
-                                Cerrar
-                            </button>
+                            <button id="modalXClose2">Cerrar</button>
                         </div>
                     </dialog>
                 </section>
