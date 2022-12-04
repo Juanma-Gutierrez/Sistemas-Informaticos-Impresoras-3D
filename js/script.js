@@ -88,6 +88,26 @@ window.onload = function () {
     document
         .getElementById("modalBJClose2")
         .addEventListener("click", closeModalBJ);
+
+        document
+        .getElementById("modalDODOpen")
+        .addEventListener("click", showModalDOD);
+    document
+        .getElementById("modalDODClose1")
+        .addEventListener("click", closeModalDOD);
+    document
+        .getElementById("modalDODClose2")
+        .addEventListener("click", closeModalDOD);
+
+        document
+        .getElementById("modalMJOpen")
+        .addEventListener("click", showModalMJ);
+    document
+        .getElementById("modalMJClose1")
+        .addEventListener("click", closeModalMJ);
+    document
+        .getElementById("modalMJClose2")
+        .addEventListener("click", closeModalMJ);
 };
 
 function showModalFDM() {
@@ -151,4 +171,18 @@ function showModalBJ() {
 }
 function closeModalBJ() {
     document.getElementById("modalBJ").close();
+}
+
+function showModalDOD() {
+    document.getElementById("modalDOD").showModal();
+}
+function closeModalDOD() {
+    document.getElementById("modalDOD").close();
+}
+
+function showModalMJ() {
+    document.getElementById("modalMJ").showModal();
+}
+function closeModalMJ() {
+    document.getElementById("modalMJ").close();
 }
