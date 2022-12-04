@@ -351,7 +351,6 @@ dialog iframe {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    top: 0;
     padding: 20px 10%;
     color:var(--blanco)
 }
@@ -538,6 +537,12 @@ footer {
     dialog iframe {
         width: 90%;
         height: fit-content;
+    }
+    .installation {
+        flex-direction: column;
+    }
+    .installation section {
+        width: 100%;
     }
 }
 
