@@ -227,12 +227,13 @@ p {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
+    margin:20px;
 }
 #kind-of div {
     width: 100%;
 }
 .kind-of-card {
-    display:flex;
+    display: flex;
     flex-direction: column;
     justify-content: space-between;
     box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
@@ -253,7 +254,8 @@ p {
     color: var(--blanco);
     text-align: center;
 }
-#kind-of h2, #kind-of h3 {
+#kind-of h2,
+#kind-of h3 {
     font-family: NotoSerif;
     color: var(--purpura);
     padding: 10px;
@@ -291,11 +293,13 @@ dialog ol,
 dialog li {
     margin: 0px 20px;
 }
-dialog img, dialog iframe{
+dialog img,
+dialog iframe {
     width: 70%;
-    margin:20px;
+    margin: 20px;
     border-radius: 5px;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+        rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 }
 
 /* modal */
@@ -338,32 +342,39 @@ dialog img, dialog iframe{
     display: none;
 }
 
-/* ********** WORKING SECTION ********** */
-#working {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
-}
-
-#working section {
-    height: 200px;
-    width: 50%;
-}
-
 /* ********** INSTALLATION SECTION ********** */
-#installation {
+#installation-section {
+    position: relative;
+    background-image: url("../images/background-installation.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    top: 0;
+    padding: 20px 10%;
+    color:var(--blanco)
+}
+#installation-title{
+    backdrop-filter: blur(25px);
+    color:var(--blanco);
+    border-color: var(--blanco);
+}
+.installation {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    flex-wrap: no-wrap;
+    gap:10px;
     justify-content: space-around;
-    align-items: center;
+    align-items: top;
 }
 
-#installation section {
-    height: 300px;
-    width: 33.33%;
+.installation section {
+    backdrop-filter: blur(25px);
+    border-radius: 5px;
+    width: 30%;
+    padding: 10px 20px;
+    margin: 10px;
 }
 
 /* ********** DRIVERS SECTION ********** */
@@ -515,16 +526,16 @@ footer {
     #kind-of {
         grid-template-columns: 1fr;
     }
-    .kind-of-modal{
+    .kind-of-modal {
         width: 90%;
     }
     dialog {
         max-width: 100%;
     }
-    dialog img{
+    dialog img {
         width: 100%;
     }
-    dialog iframe{
+    dialog iframe {
         width: 90%;
         height: fit-content;
     }
