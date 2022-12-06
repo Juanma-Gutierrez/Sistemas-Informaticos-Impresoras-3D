@@ -36,12 +36,12 @@ Texto:  Overpass
 }
 
 :root {
-    --blanco: #fafafa;
-    --negro: #080708;
-    --azul: #006dcc;
-    --naranja: #ed771d;
-    --purpura: #712f79;
-    --gris: #aaa;
+    --white: #fafafa;
+    --black: #080708;
+    --blue: #006dcc;
+    --orange: #ed771d;
+    --purple: #712f79;
+    --grey: #aaa;
 }
 
 *,
@@ -80,15 +80,15 @@ iframe {
 #header {
     font-family: Subtitle;
     padding: 10px;
-    background-color: var(--purpura);
-    color: var(--blanco);
+    background-color: var(--purple);
+    color: var(--white);
     text-align: center;
 }
 
 /* ********** NAVBAR SECTION ********** */
 #navbar {
     align-items: center;
-    background-color: var(--naranja);
+    background-color: var(--orange);
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -98,18 +98,18 @@ iframe {
 #navbar button {
     font-family: normalText;
     font-weight: bold;
-    color: var(--blanco);
-    background-color: var(--naranja);
+    color: var(--white);
+    background-color: var(--orange);
     text-decoration: none;
     padding: 15px;
     border: 0;
-    box-shadow: inset 0 0 0 0 var(--blanco);
+    box-shadow: inset 0 0 0 0 var(--white);
     cursor: pointer;
 }
 
 #navbar button:hover {
-    color: var(--purpura);
-    box-shadow: inset 0 -50px var(--blanco);
+    color: var(--purple);
+    box-shadow: inset 0 -50px var(--white);
     border-radius: 15px 15px 0px 0px;
 }
 
@@ -122,7 +122,7 @@ iframe {
     background-image: url("../images/stefan-moertl-MZSX2R6KKEw-unsplash.jpg");
     background-position: center;
     background-size: cover;
-    color: var(--blanco);
+    color: var(--white);
     display: flex;
     flex-direction: column;
     font-family: Title;
@@ -135,20 +135,20 @@ iframe {
 
 #hero-section button {
     font-family: normalText;
-    color: var(--blanco);
-    background-color: var(--azul);
+    color: var(--white);
+    background-color: var(--blue);
     text-decoration: none;
     padding: 15px;
     margin: 15px;
     border: 0;
-    box-shadow: inset 0 0 0 0 var(--blanco);
+    box-shadow: inset 0 0 0 0 var(--white);
     border-radius: 5px;
     cursor: pointer;
 }
 
 #hero-section button:hover {
-    color: var(--purpura);
-    box-shadow: inset 0 50px var(--blanco);
+    color: var(--purple);
+    box-shadow: inset 0 50px var(--white);
 }
 
 #filtro {
@@ -157,7 +157,7 @@ iframe {
     left: 0;
     width: 100%;
     height: 70vh;
-    background-color: var(--purpura);
+    background-color: var(--purple);
     opacity: 50%;
 }
 
@@ -167,14 +167,14 @@ iframe {
 
 .subtitle {
     font-family: Subtitle;
-    color: var(--azul);
+    color: var(--blue);
     font-style: italic;
     font-weight: bolder;
     font-size: 1.5rem;
     text-align: center;
     padding: 10px;
-    border-top: 1px solid var(--azul);
-    border-bottom: 1px solid var(--azul);
+    border-top: 1px solid var(--blue);
+    border-bottom: 1px solid var(--blue);
     margin: 20px;
 }
 
@@ -249,20 +249,20 @@ p {
 }
 .kind-of-card:hover {
     transform: scale(1.05) translateY(-10px);
-    box-shadow: 0px 5px 15px var(--gris);
+    box-shadow: 0px 5px 15px var(--grey);
 }
 #kind-of h4 {
     font-family: Subtitle;
     padding: 10px;
     width: 100%;
-    background-color: var(--purpura);
-    color: var(--blanco);
+    background-color: var(--purple);
+    color: var(--white);
     text-align: center;
 }
 #kind-of h2,
 #kind-of h3 {
     font-family: Subtitle;
-    color: var(--purpura);
+    color: var(--purple);
     padding: 10px;
     text-align: center;
 }
@@ -281,7 +281,7 @@ p {
 }
 #kind-of p {
     padding: 10px 20px;
-    color: var(--purpura);
+    color: var(--purple);
 }
 
 /* modal */
@@ -310,11 +310,11 @@ dialog iframe {
 /* modal */
 
 #kind-of button {
-    background-color: var(--azul);
+    background-color: var(--blue);
     border-radius: 5px;
     border: 0;
-    box-shadow: inset 0 0 0 0 var(--blanco);
-    color: var(--blanco);
+    box-shadow: inset 0 0 0 0 var(--white);
+    color: var(--white);
     cursor: pointer;
     font-family: Subtitle;
     margin-top: 15px;
@@ -322,8 +322,8 @@ dialog iframe {
     text-decoration: none;
 }
 #kind-of button:hover {
-    color: var(--blanco);
-    box-shadow: inset 150px 0px var(--naranja);
+    color: var(--white);
+    box-shadow: inset 150px 0px var(--orange);
 }
 #kind-of .close-button {
     position: absolute;
@@ -357,17 +357,17 @@ dialog iframe {
     background-repeat: no-repeat;
     background-size: cover;
     padding: 20px 10%;
-    color: var(--blanco);
+    color: var(--white);
 }
 #installation-title {
     backdrop-filter: blur(15px);
-    color: var(--blanco);
-    border-color: var(--blanco);
+    color: var(--white);
+    border-color: var(--white);
 }
 .installation {
     display: flex;
     flex-direction: row;
-    flex-wrap: no-wrap;
+    flex-wrap: wrap;
     gap: 10px;
     justify-content: space-around;
     align-items: top;
@@ -376,25 +376,13 @@ dialog iframe {
 .installation section {
     backdrop-filter: blur(15px);
     border-radius: 5px;
-    border: 1px solid var(--purpura);
-    width: 30%;
+    border: 1px solid var(--purple);
+    width: 31%;
     padding: 10px 20px;
     margin: 10px;
 }
 
-/* ********** DRIVERS SECTION ********** */
-#drivers {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
-}
 
-#drivers section {
-    height: 300px;
-    width: 50%;
-}
 
 /* ********** MARKS SECTION ********** */
 #marks {
@@ -433,7 +421,7 @@ dialog iframe {
     align-items: center;
     padding: 0px 5%;
     text-align: center;
-    color:var(--negro);
+    color:var(--black);
 }
 #where section {
     margin: 5px;
@@ -450,7 +438,7 @@ dialog iframe {
     padding-bottom: 10px;
 }
 .where-card:hover {
-    box-shadow: 0px 5px 15px var(--gris);
+    box-shadow: 0px 5px 15px var(--grey);
 }
 #where div {
     margin: 0px;
@@ -466,7 +454,7 @@ dialog iframe {
     object-fit: cover;
 }
 #where .name {
-    background-color: var(--naranja);
+    background-color: var(--orange);
     color:white;
     font-family: Subtitle;
     font-size:1.1rem;
@@ -482,31 +470,40 @@ dialog iframe {
     font-size:1.1rem;
 }
 #where a:hover{
-    color:var(--naranja);
+    color:var(--orange);
     font-weight: bold;
 }
 #where .stars i{
-    color:var(--naranja);
+    color:var(--orange);
 }
 #where .price{
     font-size: 1.3rem;
-    color:var(--purpura);
+    color:var(--purple);
     padding:5px;
 }
 /* ********** OPINION SECTION ********** */
 #opinion {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
     justify-content: space-around;
-    align-items: center;
+    align-items: top;
+    padding:0px 20px;
+    color:var(--black)
 }
-
 #opinion section {
-    height: 400px;
-    width: 50%;
+    padding:20px;
 }
-
+#opinion li{
+    list-style: none;
+    margin-left:20px;
+}
+#opinion .fa-check{
+    color:green;
+}
+#opinion .fa-times{
+    color:red;
+}
 /* ********** BIBLIOGRAPHY SECTION ********** */
 #bibliography {
     display: flex;
@@ -532,7 +529,7 @@ dialog iframe {
 }
 
 #fixed i {
-    color: var(--purpura);
+    color: var(--purple);
 }
 
 /* ********** FOOTER SECTION ********** */
