@@ -63,6 +63,7 @@ a {
 body {
     font-family: normalText;
     font-size: 0.9rem;
+    flex-grow:1;
 }
 
 .centered {
@@ -150,7 +151,6 @@ iframe {
     color: var(--purple);
     box-shadow: inset 0 50px var(--white);
 }
-
 #filtro {
     position: absolute;
     top: 0;
@@ -696,17 +696,25 @@ footer {
         padding:5px;
         margin-left: 0%;
     }
+    #bibliography {
+        flex-direction: column;
+    }
+    #bibliography section {
+        width: 100%;
+    }
 }
 
 @media screen and (width<600px) {
     #header {
         display: none;
     }
-
     #hero-section {
         font-size: 2rem;
+        height: 90vh;
     }
-
+    #filtro{
+        height:90vh;
+    }
     .foto-container {
         width: 100%;
     }
@@ -740,10 +748,5 @@ footer {
         padding:5px;
         margin-left: 0%;
     }
-    #bibliography {
-        flex-direction: column;
-    }
-    #bibliography section {
-        width: 100%;
-    }
+
 }
