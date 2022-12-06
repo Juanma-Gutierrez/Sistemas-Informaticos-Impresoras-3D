@@ -428,13 +428,14 @@ dialog iframe {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+    box-shadow:0px 0px 5px var(--grey);
     border-radius: 10px;
     overflow: hidden;
     margin: 0px;
     padding-bottom: 10px;
 }
 .where-card:hover {
+    transform: scale(1.02);
     box-shadow: 0px 5px 15px var(--grey);
 }
 #where div {
@@ -484,8 +485,12 @@ dialog iframe {
 }
 #where .price {
     font-size: 1.3rem;
+    font-weight: bold;
     color: var(--purple);
     padding: 10px;
+}
+#where sup{
+    font-size:0.7rem;
 }
 /* ********** OPINION SECTION ********** */
 #opinion {
@@ -684,5 +689,6 @@ footer {
     }
     #where section {
         width: 90%;
+        padding:20px;
     }
 }
