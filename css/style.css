@@ -21,13 +21,13 @@ Texto:  Overpass
 */
 
 @font-face {
-    font-family: SalsaRegular;
+    font-family: Title;
     src: url("../fonts/Salsa/Salsa-Regular.ttf");
 }
 
 @font-face {
-    font-family: NotoSerif;
-    src: url("../fonts/Noto_Serif/NotoSerif-Regular.ttf");
+    font-family: Subtitle;
+    src: url("../fonts/Noto_Serif/Subtitle-Regular.ttf");
 }
 
 @font-face {
@@ -55,6 +55,11 @@ Texto:  Overpass
     /*     border: 1px solid red; */
 }
 
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
 body {
     font-family: normalText;
     font-size: 0.9rem;
@@ -73,7 +78,7 @@ iframe {
 
 /* ********** HEADER SECTION ********** */
 #header {
-    font-family: NotoSerif;
+    font-family: Subtitle;
     padding: 10px;
     background-color: var(--purpura);
     color: var(--blanco);
@@ -91,7 +96,7 @@ iframe {
 }
 
 #navbar button {
-    font-family: NotoSerif;
+    font-family: normalText;
     font-weight: bold;
     color: var(--blanco);
     background-color: var(--naranja);
@@ -120,7 +125,7 @@ iframe {
     color: var(--blanco);
     display: flex;
     flex-direction: column;
-    font-family: SalsaRegular;
+    font-family: Title;
     font-size: 6rem;
     height: 70vh;
     justify-content: center;
@@ -129,7 +134,7 @@ iframe {
 }
 
 #hero-section button {
-    font-family: NotoSerif;
+    font-family: normalText;
     color: var(--blanco);
     background-color: var(--azul);
     text-decoration: none;
@@ -161,7 +166,7 @@ iframe {
 }
 
 .subtitle {
-    font-family: NotoSerif;
+    font-family: Subtitle;
     color: var(--azul);
     font-style: italic;
     font-weight: bolder;
@@ -227,7 +232,7 @@ p {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
-    margin:20px;
+    margin: 20px;
 }
 #kind-of div {
     width: 100%;
@@ -247,7 +252,7 @@ p {
     box-shadow: 0px 5px 15px var(--gris);
 }
 #kind-of h4 {
-    font-family: NotoSerif;
+    font-family: Subtitle;
     padding: 10px;
     width: 100%;
     background-color: var(--purpura);
@@ -256,7 +261,7 @@ p {
 }
 #kind-of h2,
 #kind-of h3 {
-    font-family: NotoSerif;
+    font-family: Subtitle;
     color: var(--purpura);
     padding: 10px;
     text-align: center;
@@ -311,7 +316,7 @@ dialog iframe {
     box-shadow: inset 0 0 0 0 var(--blanco);
     color: var(--blanco);
     cursor: pointer;
-    font-family: NotoSerif;
+    font-family: Subtitle;
     margin-top: 15px;
     padding: 15px;
     text-decoration: none;
@@ -352,18 +357,18 @@ dialog iframe {
     background-repeat: no-repeat;
     background-size: cover;
     padding: 20px 10%;
-    color:var(--blanco)
+    color: var(--blanco);
 }
-#installation-title{
+#installation-title {
     backdrop-filter: blur(15px);
-    color:var(--blanco);
+    color: var(--blanco);
     border-color: var(--blanco);
 }
 .installation {
     display: flex;
     flex-direction: row;
     flex-wrap: no-wrap;
-    gap:10px;
+    gap: 10px;
     justify-content: space-around;
     align-items: top;
 }
@@ -371,7 +376,7 @@ dialog iframe {
 .installation section {
     backdrop-filter: blur(15px);
     border-radius: 5px;
-    border:1px solid var(--purpura);
+    border: 1px solid var(--purpura);
     width: 30%;
     padding: 10px 20px;
     margin: 10px;
@@ -403,7 +408,7 @@ dialog iframe {
     justify-content: space-around;
     align-items: center;
     height: 30vh;
-    padding:0% 10%;
+    padding: 0% 10%;
 }
 #marks section {
     display: flex;
@@ -412,10 +417,10 @@ dialog iframe {
     object-fit: cover;
 }
 #marks section:hover {
-    transform:scale(1.5);
+    transform: scale(1.5);
 }
-#marks img{
-    padding:5px 20px;
+#marks img {
+    padding: 5px 20px;
     max-width: 170px;
 }
 
@@ -426,11 +431,13 @@ dialog iframe {
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
-    padding:0px 20px;
+    padding: 0px 5%;
+    text-align: center;
+    color:var(--negro);
 }
 #where section {
-    height: 200px;
-    width: 30%;
+    margin: 5px;
+    width: 20%;
 }
 .where-card {
     display: flex;
@@ -443,8 +450,48 @@ dialog iframe {
     padding-bottom: 10px;
 }
 .where-card:hover {
-    transform: scale(1.05) translateY(-10px);
     box-shadow: 0px 5px 15px var(--gris);
+}
+#where div {
+    margin: 0px;
+    padding: 0px;
+}
+#where .photo {
+    height: 40vh;
+    overflow: hidden;
+}
+#where img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+#where .name {
+    background-color: var(--naranja);
+    color:white;
+    font-family: Subtitle;
+    font-size:1.1rem;
+    padding:0px 10px;
+    min-height:10vh;
+}
+#where .shop {
+    font-family: normalText;
+    padding:5px 10px;
+}
+#where a{
+    text-decoration: none;
+    font-size:1.1rem;
+}
+#where a:hover{
+    color:var(--naranja);
+    font-weight: bold;
+}
+#where .stars i{
+    color:var(--naranja);
+}
+#where .price{
+    font-size: 1.3rem;
+    color:var(--purpura);
+    padding:5px;
 }
 /* ********** OPINION SECTION ********** */
 #opinion {
@@ -592,5 +639,9 @@ footer {
     }
     #what-are div {
         width: 100%;
+    }
+
+    #where section {
+        width: 40%;
     }
 }
