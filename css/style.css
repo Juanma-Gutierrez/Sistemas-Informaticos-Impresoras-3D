@@ -576,8 +576,8 @@ dialog iframe {
     font-size: 3rem;
     height: 50px;
     width: 50px;
+    z-index: 1000;
 }
-
 #fixed i {
     color: var(--purple);
 }
@@ -689,6 +689,13 @@ footer {
     #where section {
         width: 45%;
     }
+    #opinion section {
+        width: 90%;
+    }
+    #opinion li {
+        padding:5px;
+        margin-left: 0%;
+    }
 }
 
 @media screen and (width<600px) {
@@ -726,6 +733,17 @@ footer {
         padding: 20px;
     }
     #opinion section {
+        width: 100%;
+        padding:20px;
+    }
+    #opinion li {
+        padding:5px;
+        margin-left: 0%;
+    }
+    #bibliography {
+        flex-direction: column;
+    }
+    #bibliography section {
         width: 100%;
     }
 }
