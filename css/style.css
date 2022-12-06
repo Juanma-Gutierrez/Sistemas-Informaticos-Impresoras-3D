@@ -134,7 +134,7 @@ iframe {
 }
 
 #hero-section button {
-    font-family: normalText;
+    font-family: Subtitle;
     color: var(--white);
     background-color: var(--blue);
     text-decoration: none;
@@ -372,17 +372,14 @@ dialog iframe {
     justify-content: space-around;
     align-items: top;
 }
-
 .installation section {
     backdrop-filter: blur(15px);
     border-radius: 5px;
     border: 1px solid var(--purple);
-    width: 31%;
+    width: 30%;
     padding: 10px 20px;
     margin: 10px;
 }
-
-
 
 /* ********** MARKS SECTION ********** */
 #marks {
@@ -421,7 +418,7 @@ dialog iframe {
     align-items: center;
     padding: 0px 5%;
     text-align: center;
-    color:var(--black);
+    color: var(--black);
 }
 #where section {
     margin: 5px;
@@ -454,55 +451,69 @@ dialog iframe {
     object-fit: cover;
 }
 #where .name {
-    background-color: var(--orange);
-    color:white;
+    background-color: var(--purple);
+    color: white;
     font-family: Subtitle;
-    font-size:1.1rem;
-    padding:0px 10px;
-    min-height:10vh;
+    font-size: 1.1rem;
+    padding: 0px 10px;
+    min-height: 10vh;
 }
-#where .shop {
+#where .stars {
+    padding: 15px;
+}
+#where .stars i {
+    color: var(--orange);
+}
+#where .shop button {
+    width: 80%;
     font-family: normalText;
-    padding:5px 10px;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--orange);
+    color: var(--white);
 }
-#where a{
-    text-decoration: none;
-    font-size:1.1rem;
-}
-#where a:hover{
-    color:var(--orange);
+#where .shop button:hover {
+    background-color: var(--purple);
     font-weight: bold;
+    color: var(--white);
 }
-#where .stars i{
-    color:var(--orange);
-}
-#where .price{
+#where .shop i {
     font-size: 1.3rem;
-    color:var(--purple);
-    padding:5px;
+    padding: 5px;
+}
+#where .price {
+    font-size: 1.3rem;
+    color: var(--purple);
+    padding: 10px;
 }
 /* ********** OPINION SECTION ********** */
 #opinion {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: top;
-    padding:0px 20px;
-    color:var(--black)
+    justify-content: center;
+    align-items: center;
+    padding: 0px 20px;
+    color: var(--black);
+    background: linear-gradient(227deg, #92c8f7, #fbbf92, #c996d0, #c9e17f);
+    background-size: 800% 800%;
+    -webkit-animation: opinion-animation 60s ease infinite;
+    animation: opinion-animation 60s ease infinite;
 }
 #opinion section {
-    padding:20px;
+    width: 70%;
+    padding: 20px;
 }
-#opinion li{
+#opinion li {
     list-style: none;
-    margin-left:20px;
+    margin-left: 5%;
 }
-#opinion .fa-check{
-    color:green;
+#opinion .fa-check {
+    color: green;
 }
-#opinion .fa-times{
-    color:red;
+#opinion .fa-times {
+    color: red;
 }
 /* ********** BIBLIOGRAPHY SECTION ********** */
 #bibliography {
@@ -580,17 +591,37 @@ footer {
         background-image: url("../images/stefan-moertl-MZSX2R6KKEw-unsplash.jpg");
     }
 }
+@-webkit-keyframes opinion-animation {
+    0% {
+        background-position: 0% 92%;
+    }
+    50% {
+        background-position: 100% 9%;
+    }
+    100% {
+        background-position: 0% 92%;
+    }
+}
+@keyframes opinion-animation {
+    0% {
+        background-position: 0% 92%;
+    }
+    50% {
+        background-position: 100% 9%;
+    }
+    100% {
+        background-position: 0% 92%;
+    }
+}
 
 /* ********** MEDIA QUERIES ********** */
 @media screen and (width<900px) {
     #navbar button {
         padding: 5px;
     }
-
     #hero-section {
         font-size: 3rem;
     }
-
     #wrapper {
         width: 90%;
     }
@@ -616,6 +647,9 @@ footer {
     .installation section {
         width: 100%;
     }
+    #where section{
+        width: 45%;
+    }
 }
 
 @media screen and (width<600px) {
@@ -637,8 +671,18 @@ footer {
     #what-are div {
         width: 100%;
     }
-
+    #marks {
+        height:auto;
+        padding:20px;
+    }
+    #marks a{
+        width: 90%;
+    }
+    #marks img {
+        padding: 10px;
+        width: 100%;
+    }
     #where section {
-        width: 40%;
+        width: 90%;
     }
 }
