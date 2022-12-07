@@ -526,9 +526,9 @@ dialog iframe {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: flex-start;
     align-items: top;
-    min-height: 30vh;
+    min-height: 20vh;
 }
 #bibliography section {
     width: 50%;
@@ -590,8 +590,8 @@ details[open] > summary::before {
 #to-up {
     display:none;
     position: fixed;
-    bottom: 5%;
-    right: 5%;
+    bottom: 2%;
+    right: 1%;
     font-size: 3rem;
     height: 50px;
     width: 50px;
