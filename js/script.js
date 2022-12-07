@@ -6,7 +6,6 @@ window.onload = function () {
         function (event) {
             var x = document.getElementById("to-up");
             var top = this.scrollY;
-            console.log(top);
             if (top > 600) x.style.display = "block";
             else x.style.display = "none";
         },
