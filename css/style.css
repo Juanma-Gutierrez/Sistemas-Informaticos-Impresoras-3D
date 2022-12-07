@@ -757,6 +757,17 @@ footer a:hover{
         height: auto;
         padding: 20px;
     }
+    #marks section{
+        width: 100%;
+    }
+    #marks a{
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin:auto;
+    }
     #marks a {
         width: 90%;
     }
