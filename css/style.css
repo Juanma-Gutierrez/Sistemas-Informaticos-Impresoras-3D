@@ -362,7 +362,7 @@ dialog iframe {
 #installation-title {
     backdrop-filter: blur(15px);
     color: var(--white);
-    border-color: var(--white);
+    border-color: var(--purple);
 }
 .installation {
     display: flex;
@@ -570,8 +570,9 @@ dialog iframe {
     padding: 3px;
 }
 
-/* ********** FIXED BUTTON ********** */
-#fixed {
+/* ********** TO-UP BUTTON ********** */
+#to-up {
+    display:none;
     position: fixed;
     bottom: 5%;
     right: 5%;
@@ -588,13 +589,10 @@ dialog iframe {
                 1px -1px #fff,
                 -1px 1px #fff;
 }
-#fixed i {
+#to-up i {
     color: var(--purple);
 }
 
-#separator{
-    margin-bottom: 0px;
-}
 /* ********** FOOTER SECTION ********** */
 footer {
     align-items: center;
