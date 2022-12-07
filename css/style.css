@@ -577,14 +577,15 @@ details[open] > summary {
 }
 details > summary::before {
     content:"\f0a9";
+    margin:5px;
     font-family: FontAwesome;
 }
 details[open] > summary::before {
     content:"\f0ab";
+    margin:5px;
     font-family: FontAwesome;
 }
 
-f0a9
 /* ********** TO-UP BUTTON ********** */
 #to-up {
     display:none;
