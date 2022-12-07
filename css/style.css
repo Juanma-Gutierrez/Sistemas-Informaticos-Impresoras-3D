@@ -569,7 +569,22 @@ dialog iframe {
 #bibliography p {
     padding: 3px;
 }
+details > summary {
+    list-style-type: none;
+}
+details[open] > summary {
+    list-style-type: none;
+}
+details > summary::before {
+    content:"\f0a9";
+    font-family: FontAwesome;
+}
+details[open] > summary::before {
+    content:"\f0ab";
+    font-family: FontAwesome;
+}
 
+f0a9
 /* ********** TO-UP BUTTON ********** */
 #to-up {
     display:none;
