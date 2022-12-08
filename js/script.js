@@ -1,5 +1,4 @@
 window.onload = function () {
-
     // Mostrar botón to-up cuando el scrollY baja de 600px
     window.addEventListener(
         "scroll",
@@ -11,6 +10,11 @@ window.onload = function () {
         },
         false
     );
+
+    // burger-menu
+    document
+        .getElementById("burger-menu")
+        .addEventListener("click", showHideMenu);
 
     document
         .getElementById("modalFDMOpen")
@@ -92,7 +96,7 @@ window.onload = function () {
         .getElementById("modalEBMClose2")
         .addEventListener("click", closeModalEBM);
 
-        document
+    document
         .getElementById("modalBJOpen")
         .addEventListener("click", showModalBJ);
     document
@@ -102,7 +106,7 @@ window.onload = function () {
         .getElementById("modalBJClose2")
         .addEventListener("click", closeModalBJ);
 
-        document
+    document
         .getElementById("modalDODOpen")
         .addEventListener("click", showModalDOD);
     document
@@ -112,7 +116,7 @@ window.onload = function () {
         .getElementById("modalDODClose2")
         .addEventListener("click", closeModalDOD);
 
-        document
+    document
         .getElementById("modalMJOpen")
         .addEventListener("click", showModalMJ);
     document
@@ -199,3 +203,19 @@ function showModalMJ() {
 function closeModalMJ() {
     document.getElementById("modalMJ").close();
 }
+
+/*
+ * showHideMenu: Muestra u oculta el menú hamburguesa en modo responsive
+ */
+function showHideMenu() {
+    var x = document.getElementById("mobile-options");
+    var ico = document.getElementById("burger-menu");
+    if (x.style.height === "333px") {
+        x.style.height = "0px";
+        ico.className = "fa fa-bars";
+    } else {
+        x.style.height = "333px";
+        ico.className = "fa fa-times";
+    }
+}
+

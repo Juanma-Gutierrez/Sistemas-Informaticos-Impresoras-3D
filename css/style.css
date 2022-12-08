@@ -90,7 +90,6 @@ iframe {
     flex-wrap: wrap;
     justify-content: center;
 }
-
 #navbar button {
     font-family: normalText;
     font-weight: bold;
@@ -102,12 +101,39 @@ iframe {
     box-shadow: inset 0 0 0 0 var(--white);
     cursor: pointer;
 }
-
 #navbar button:hover {
     color: var(--purple);
     box-shadow: inset 0 -50px var(--white);
     border-radius: 15px 15px 0px 0px;
 }
+#control-menu{
+    display:none;
+    flex-direction: column;
+    width: 100%;
+}
+#control-menu i{
+    text-align: right;
+}
+#mobile-options{
+    display:block;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 100%;
+    height:0px;
+    transition: 1s;
+    background-color: var(--orange);
+
+}
+#navbar-mobile button, #navbar-mobile i{
+    padding:10px 50px;
+    width: 100%;
+    background-color: #ed771d;
+    color:white;
+    border: none;
+    border-bottom: 1px solid var(--purple);
+    font-size: 1.1rem;
+}
+
 
 /* ********** HERO SECTION ********** */
 #hero-section {
@@ -124,22 +150,22 @@ iframe {
     font-family: Title;
     font-size: 6rem;
     height: 90vh;
-    justify-content: center;
+    justify-content: space-evenly;
     margin-top: 0px;
     text-shadow: 0px 0px 15px #000a;
 }
 
 #hero-section button {
-    font-family: Title;
-    color: var(--white);
     background-color: var(--blue);
-    text-decoration: none;
-    padding: 15px;
-    margin: 15px;
-    border: 0;
+    border-radius: 50px;
+    border: 1px solid var(--purple);
     box-shadow: inset 0 0 0 0 var(--white);
-    border-radius: 5px;
+    color: var(--white);
     cursor: pointer;
+    font-family: Title;
+    margin: 20px;
+    padding: 15px;
+    text-decoration: none;
 }
 
 #hero-section button:hover {
@@ -739,6 +765,12 @@ footer a:hover {
 @media screen and (width<600px) {
     #header {
         display: none;
+    }
+    #navbar{
+        display:none;
+    }
+    #control-menu{
+        display:flex;
     }
     #hero-section {
         font-size: 10vw;
