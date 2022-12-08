@@ -637,39 +637,39 @@ footer a:hover{
 /* ********** KEYFRAMES ANIMATIONS ********** */
 @keyframes hero-section-carousel {
     0% {
-        background-image: url("../images/stefan-moertl-MZSX2R6KKEw-unsplash.jpg");
+        background-image: url("../images/hero1.jpg");
     }
 
     23% {
-        background-image: url("../images/stefan-moertl-MZSX2R6KKEw-unsplash.jpg");
+        background-image: url("../images/hero1.jpg");
     }
 
     25% {
-        background-image: url("../images/osman-talha-dikyar-1MZ9JjAXg1E-unsplash.jpg");
+        background-image: url("../images/hero2.jpg");
     }
 
     48% {
-        background-image: url("../images/osman-talha-dikyar-1MZ9JjAXg1E-unsplash.jpg");
+        background-image: url("../images/hero2.jpg");
     }
 
     50% {
-        background-image: url("../images/stefan-moertl-mG1mJ7bSWXw-unsplash.jpg");
+        background-image: url("../images/hero3.jpg");
     }
 
     73% {
-        background-image: url("../images/stefan-moertl-mG1mJ7bSWXw-unsplash.jpg");
+        background-image: url("../images/hero3.jpg");
     }
 
     75% {
-        background-image: url("../images/osman-talha-dikyar-PomM7aa5m18-unsplash.jpg");
+        background-image: url("../images/hero4.jpg");
     }
 
     98% {
-        background-image: url("../images/osman-talha-dikyar-PomM7aa5m18-unsplash.jpg");
+        background-image: url("../images/hero4.jpg");
     }
 
     100% {
-        background-image: url("../images/stefan-moertl-MZSX2R6KKEw-unsplash.jpg");
+        background-image: url("../images/hero1.jpg");
     }
 }
 @-webkit-keyframes opinion-animation {
