@@ -15,7 +15,7 @@ window.onload = function () {
     document
         .getElementById("burger-menu")
         .addEventListener("click", showHideMenu);
-    document.getElementById("mobile-options").style.display = "block";
+    document.getElementById("mobile-options").style.display = "none";
 
     document
         .getElementById("modalFDMOpen")
@@ -211,11 +211,11 @@ function closeModalMJ() {
 function showHideMenu() {
     var x = document.getElementById("mobile-options");
     var ico = document.getElementById("burger-menu");
-    if (x.style.height === "333px") {
-        x.style.height = "0px";
-        ico.className = "fa fa-bars";
-    } else {
-        x.style.height = "333px";
+    if (x.style.display === "none") {
+        x.style.display= "block";
         ico.className = "fa fa-times";
+    } else {
+        x.style.display = "none";
+        ico.className = "fa fa-bars";
     }
 }

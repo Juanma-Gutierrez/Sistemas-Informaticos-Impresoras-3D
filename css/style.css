@@ -67,7 +67,7 @@ body {
     align-items: center;
 }
 
-i.fa{
+i.fa {
     margin-left: 5px;
 }
 
@@ -119,8 +119,6 @@ i.fa{
     flex-direction: column;
     align-items: flex-end;
     width: 100%;
-    height: 0px;
-    transition: 1s;
     background-color: var(--purple);
 }
 #mobile-options button,
@@ -131,12 +129,17 @@ i.fa{
     color: white;
     border: none;
     font-size: 1.1rem;
-    margin-left:0;
+    margin-left: 0;
 }
 #navbar-mobile i {
     background-color: var(--purple);
 }
-
+#mobile-options button {
+    border-bottom: 1px solid var(--purple);
+}
+#mobile-options button:hover {
+    background-color: var(--purple);
+}
 /* ********** HERO SECTION ********** */
 #hero-section {
     position: relative;
@@ -344,7 +347,7 @@ dialog iframe {
 #kind-of button i {
     font-size: 1rem;
     padding: 0px 3px;
-    margin-left:0px;
+    margin-left: 0px;
 }
 #kind-of button:hover {
     color: var(--white);
