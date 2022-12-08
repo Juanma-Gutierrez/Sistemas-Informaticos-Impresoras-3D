@@ -15,6 +15,7 @@ window.onload = function () {
     document
         .getElementById("burger-menu")
         .addEventListener("click", showHideMenu);
+    document.getElementById("mobile-options").style.display = "block";
 
     document
         .getElementById("modalFDMOpen")
@@ -218,4 +219,3 @@ function showHideMenu() {
         ico.className = "fa fa-times";
     }
 }
-
