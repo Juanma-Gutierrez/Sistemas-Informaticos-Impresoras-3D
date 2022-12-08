@@ -67,8 +67,8 @@ body {
     align-items: center;
 }
 
-iframe {
-    margin: 20px;
+i.fa{
+    margin-left: 5px;
 }
 
 /* ********** HEADER SECTION ********** */
@@ -159,8 +159,8 @@ iframe {
 #hero-section button {
     background-color: var(--blue);
     border-radius: 50px;
-    border: 1px solid var(--purple);
-    box-shadow: inset 0 0 0 0 var(--white);
+    border: none;
+    box-shadow: inset 0 0 0 0 var(--orange);
     color: var(--white);
     cursor: pointer;
     font-family: Title;
@@ -170,8 +170,7 @@ iframe {
 }
 
 #hero-section button:hover {
-    color: var(--purple);
-    box-shadow: inset 0 50px var(--white);
+    box-shadow: inset 0 50px var(--orange);
 }
 #filtro {
     position: absolute;
@@ -344,6 +343,7 @@ dialog iframe {
 #kind-of button i {
     font-size: 1rem;
     padding: 0px 3px;
+    margin-left:0px;
 }
 #kind-of button:hover {
     color: var(--white);
@@ -446,7 +446,7 @@ dialog iframe {
 #where {
     display: flex;
     flex-direction: row;
-    flex-wrap:nowrap;
+    flex-wrap: nowrap;
     justify-content: space-around;
     align-items: center;
     padding: 0px 5%;
@@ -514,7 +514,6 @@ dialog iframe {
 }
 #where .shop i {
     font-size: 1.3rem;
-    padding: 5px;
 }
 #where .price {
     font-size: 1.3rem;
@@ -723,7 +722,7 @@ footer a:hover {
 
 /* ********** MEDIA QUERIES ********** */
 @media screen and (width<1400px) {
-    #where{
+    #where {
         flex-wrap: wrap;
     }
     #where section {
