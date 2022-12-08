@@ -7,27 +7,22 @@
 /*
 ***** Assets *****
 Colores:
-    Azul:    006DCC
-    Naranja: ED771D
-    Púrpura: 712F79
-    Negro:   080708
-    Blanco:  F9F9F9
+    --white: #fafafa;
+    --black: #080708;
+    --blue: #006dcc;
+    --orange: #ed771d;
+    --purple: #712f79;
+    --grey: #aaa;
 
 Fuentes:
-Título (Hero Section): Salsa // 
-            Petit Formal Script // Sarina // Lily Script one
-Subtítulo: Noto Serif
+Título: Roboto Slab
 Texto:  Overpass
 */
 
-@font-face {
-    font-family: Title;
-    src: url("../fonts/Salsa/Salsa-Regular.ttf");
-}
 
 @font-face {
-    font-family: Subtitle;
-    src: url("../fonts/Noto_Serif/Subtitle-Regular.ttf");
+    font-family: Title;
+    src: url("../fonts/Roboto_Slab/RobotoSlab-VariableFont_wght.ttf");
 }
 
 @font-face {
@@ -79,7 +74,7 @@ iframe {
 
 /* ********** HEADER SECTION ********** */
 #header {
-    font-family: Subtitle;
+    font-family: Title;
     padding: 10px;
     background-color: var(--purple);
     color: var(--white);
@@ -135,7 +130,7 @@ iframe {
 }
 
 #hero-section button {
-    font-family: Subtitle;
+    font-family: Title;
     color: var(--white);
     background-color: var(--blue);
     text-decoration: none;
@@ -166,7 +161,7 @@ iframe {
 }
 
 .subtitle {
-    font-family: Subtitle;
+    font-family: Title;
     color: var(--blue);
     font-style: italic;
     font-weight: bolder;
@@ -252,7 +247,7 @@ p {
     box-shadow: 0px 5px 15px var(--grey);
 }
 #kind-of h4 {
-    font-family: Subtitle;
+    font-family: Title;
     padding: 10px;
     width: 100%;
     background-color: var(--purple);
@@ -261,7 +256,7 @@ p {
 }
 #kind-of h2,
 #kind-of h3 {
-    font-family: Subtitle;
+    font-family: Title;
     color: var(--purple);
     padding: 10px;
     text-align: center;
@@ -316,7 +311,7 @@ dialog iframe {
     box-shadow: inset 0 0 0 0 var(--white);
     color: var(--white);
     cursor: pointer;
-    font-family: Subtitle;
+    font-family: Title;
     margin-top: 15px;
     padding: 15px;
     text-decoration: none;
@@ -378,8 +373,8 @@ dialog iframe {
     padding: 10px 10px;
     margin: 5px;
 }
-.installation h2{
-    padding:10px;
+.installation h2 {
+    padding: 10px;
 }
 
 /* ********** MARKS SECTION ********** */
@@ -455,7 +450,7 @@ dialog iframe {
 #where .name {
     background-color: var(--purple);
     color: white;
-    font-family: Subtitle;
+    font-family: Title;
     font-size: 1.1rem;
     padding: 0px 10px;
     min-height: 10vh;
@@ -576,19 +571,19 @@ details[open] > summary {
     list-style-type: none;
 }
 details > summary::before {
-    content:"\f0a9";
-    margin:5px;
+    content: "\f0a9";
+    margin: 5px;
     font-family: FontAwesome;
 }
 details[open] > summary::before {
-    content:"\f0ab";
-    margin:5px;
+    content: "\f0ab";
+    margin: 5px;
     font-family: FontAwesome;
 }
 
 /* ********** TO-UP BUTTON ********** */
 #to-up {
-    display:none;
+    display: none;
     position: fixed;
     bottom: 2%;
     right: 1%;
@@ -596,14 +591,8 @@ details[open] > summary::before {
     height: 50px;
     width: 50px;
     z-index: 1000;
-    text-shadow: 2px 0 #fff,
-                -2px 0 #fff,
-                0 2px #fff,
-                0 -2px #fff,
-                1px 1px #fff,
-                -1px -1px #fff,
-                1px -1px #fff,
-                -1px 1px #fff;
+    text-shadow: 2px 0 #fff, -2px 0 #fff, 0 2px #fff, 0 -2px #fff, 1px 1px #fff,
+        -1px -1px #fff, 1px -1px #fff, -1px 1px #fff;
 }
 #to-up i {
     color: var(--purple);
@@ -613,25 +602,25 @@ details[open] > summary::before {
 footer {
     align-items: center;
     background-color: var(--purple);
-    color:var(--white);
+    color: var(--white);
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
 }
-footer div{
-    margin:10px;
+footer div {
+    margin: 10px;
     text-align: center;
 }
-footer a{
-    border-radius:50px;
-    box-shadow: inset 0px 0px  var(--white);
-    margin:5px;
-    padding:5px 10px;
+footer a {
+    border-radius: 50px;
+    box-shadow: inset 0px 0px var(--white);
+    margin: 5px;
+    padding: 5px 10px;
 }
-footer a:hover{
+footer a:hover {
     box-shadow: inset 0px -30px var(--white);
-    color:var(--purple)
+    color: var(--purple);
 }
 
 /* ********** KEYFRAMES ANIMATIONS ********** */
@@ -728,7 +717,7 @@ footer a:hover{
     #where section {
         width: 45%;
     }
-    #installation-section{
+    #installation-section {
         padding: 20px;
     }
     #opinion section {
@@ -771,16 +760,16 @@ footer a:hover{
         height: auto;
         padding: 20px;
     }
-    #marks section{
+    #marks section {
         width: 100%;
     }
-    #marks a{
-        display:flex;
+    #marks a {
+        display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         width: 100%;
-        margin:auto;
+        margin: auto;
     }
     #marks a {
         width: 90%;
@@ -793,7 +782,7 @@ footer a:hover{
         width: 90%;
         padding: 20px;
     }
-    footer a{
-        display:block;
+    footer a {
+        display: block;
     }
 }
