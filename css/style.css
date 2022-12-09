@@ -725,7 +725,7 @@ footer a:hover {
 }
 
 /* ********** MEDIA QUERIES ********** */
-@media screen and (width<1400px) {
+@media screen and (width<1300px) {
     #where {
         flex-wrap: wrap;
     }
